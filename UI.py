@@ -50,7 +50,7 @@ def reconnect_to_server():
 def validate_user(event):
     label_failed_connection.config(text="")
     input_username = entry_username.get().strip()
-    if input_username is "":
+    if input_username == "":
         username.set("")
         label_empty_username.config(text="Please INSERT a username!!!")
     else:
